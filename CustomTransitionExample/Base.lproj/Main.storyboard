@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djB-8E-D3U" userLabel="Show Button">
+                                <rect key="frame" x="255" y="284" width="91" height="32"/>
+                                <color key="backgroundColor" red="0.25589396116845625" green="0.45557021560835603" blue="0.46333451704545459" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="A9z-xZ-DaQ"/>
+                                    <constraint firstAttribute="height" constant="32" id="ydP-rf-0uo"/>
+                                </constraints>
+                                <state key="normal" title="Show Menu">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.36637425340000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showMenu:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mFX-NV-zP2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45098039220000002" green="0.80392156859999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="djB-8E-D3U" secondAttribute="centerX" id="T6a-VH-q4U"/>
+                            <constraint firstAttribute="centerY" secondItem="djB-8E-D3U" secondAttribute="centerY" id="yiV-m0-A3s"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="H5q-qM-TYI">
+            <objects>
+                <viewController storyboardIdentifier="MenuViewController" modalPresentationStyle="overCurrentContext" id="Wxn-P0-YOZ" customClass="MenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DJT-kn-Z1A"/>
+                        <viewControllerLayoutGuide type="bottom" id="1aW-g7-Xok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DPz-c5-FKA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uQz-tS-JEf" userLabel="Content View">
+                                <rect key="frame" x="0.0" y="0.0" width="420" height="600"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5R1-HQ-gnq" userLabel="Dismiss Button">
+                                        <rect key="frame" x="172" y="285" width="77" height="30"/>
+                                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="pxz-KG-9g6"/>
+                                            <constraint firstAttribute="width" constant="77" id="uXo-7s-9ya"/>
+                                        </constraints>
+                                        <state key="normal" title="Dismiss">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dismissMenu:" destination="Wxn-P0-YOZ" eventType="touchUpInside" id="1cm-y4-vkU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="5R1-HQ-gnq" secondAttribute="centerX" id="1Xe-Uf-hlE"/>
+                                    <constraint firstAttribute="centerY" secondItem="5R1-HQ-gnq" secondAttribute="centerY" id="6Xx-Xh-NpY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1aW-g7-Xok" firstAttribute="top" secondItem="uQz-tS-JEf" secondAttribute="bottom" id="Abj-hz-1dP"/>
+                            <constraint firstItem="uQz-tS-JEf" firstAttribute="width" secondItem="DPz-c5-FKA" secondAttribute="width" multiplier="0.7" id="Opd-ua-gKm"/>
+                            <constraint firstItem="uQz-tS-JEf" firstAttribute="top" secondItem="DPz-c5-FKA" secondAttribute="top" id="Rno-oO-GEf"/>
+                            <constraint firstItem="uQz-tS-JEf" firstAttribute="leading" secondItem="DPz-c5-FKA" secondAttribute="leading" id="eGb-z8-apF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentViewLeadingConstraint" destination="eGb-z8-apF" id="L6y-HX-nne"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bmk-G2-JAB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="872" y="136"/>
+        </scene>
+    </scenes>
+</document>
