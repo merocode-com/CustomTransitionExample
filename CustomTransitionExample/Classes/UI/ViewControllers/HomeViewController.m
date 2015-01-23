@@ -37,7 +37,7 @@
     MenuViewController *menuVC = [self.storyboard instantiateViewControllerWithIdentifier:@"MenuViewController"];
     menuVC.modalPresentationStyle = UIModalPresentationCustom;
     menuVC.transitioningDelegate = self.transitionController;
-    [self presentViewController:menuVC animated:self completion:nil];
+    [self presentViewController:menuVC animated:YES completion:nil];
 }
 /*
 #pragma mark - Navigation
